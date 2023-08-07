@@ -1,4 +1,3 @@
-import random
 from flask import flash, redirect, render_template, url_for
 
 from . import app, db
@@ -32,8 +31,8 @@ def index_view():
         db.session.add(url_map)
         db.session.commit()
         flash('Ваша новая ссылка готова<br>' + '<a href="' + url_for(
-            'short_view', short=short, _external=True) + '">'
-              + url_for('short_view', short=short, _external=True) + '</a>')
+            'short_view', short=short, _external=True) + '">' + url_for(
+            'short_view', short=short, _external=True) + '</a>')
     return render_template('yacut.html', form=form)
 
 
