@@ -1,6 +1,6 @@
 import random
 
-from yacut.consts import SYMBOLS_FOR_URL, SHORT_SIZE
+from yacut.constants import SYMBOLS_FOR_URL, SHORT_SIZE
 from yacut.models import URLMap
 
 

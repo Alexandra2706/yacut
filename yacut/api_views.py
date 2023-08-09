@@ -2,7 +2,7 @@ from flask import jsonify, request
 from http import HTTPStatus
 
 from . import app, db
-from yacut.consts import SYMBOLS_FOR_URL, SHORT_MAX_SIZE
+from yacut.constants import SYMBOLS_FOR_URL, SHORT_MAX_SIZE
 from yacut.error_handlers import InvalidAPIUsage
 from yacut.models import URLMap
 from yacut.utils import get_unique_short_id
