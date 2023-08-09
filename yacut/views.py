@@ -29,7 +29,8 @@ def index_view():
     db.session.add(url_map)
     db.session.commit()
     short_url = url_for('short_view', short=short, _external=True)
-    flash('Ваша новая ссылка готова<br>' + '<a href="' + short_url + '">' + short_url + '</a>')
+    flash('Ваша новая ссылка готова<br>'
+          + '<a href="' + short_url + '">' + short_url + '</a>')
     return render_template('yacut.html', form=form)
 
 
